@@ -1,11 +1,11 @@
 import socket
 
-UDP_IP_ADDRESS = '192.168.122.194'
+UDP_IP_ADDRESS = '192.168.122.168'
 UDP_PORT = 5050
 
 serverSock = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
 serverSock.bind(((UDP_IP_ADDRESS,UDP_PORT)))
-filename='server2.jpg'
+filename='server1.jpg'
 fp = open(filename,'wb+')
 ditulis=0
 counter=0
