@@ -11,7 +11,9 @@ def kirim_semua():
         print(f"mendownload {urls[k]}")
         waktu = time.time()
         #bagian ini merupakan bagian yang mengistruksikan eksekusi fungsi download gambar secara multiprocess
-        texec[k] = Process(target=kirim_gambar, args=("127.0.0.1",5050,urls[k],))
+        UDP_IP_ADDRESS = "192.168.122.25"
+
+        texec[k] = Process(target=kirim_gambar, args=(UDP_IP_ADDRESS,5050,urls[k]))
         texec[k].start()
     #setelah menyelesaikan tugasnya, dikembalikan ke main process dengan join
     for k in urls:
