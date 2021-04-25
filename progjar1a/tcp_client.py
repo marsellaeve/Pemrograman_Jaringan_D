@@ -4,7 +4,7 @@ import json
 import logging
 import xmltodict
 
-server_address = ('127.0.0.1', 12000)
+server_address = ('192.168.122.56', 12000)
 
 
 def getdatapemain(nomor=0):
