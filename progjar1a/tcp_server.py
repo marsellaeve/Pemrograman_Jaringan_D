@@ -87,4 +87,4 @@ def run_server(server_address):
 
 
 if __name__=='__main__':
-    run_server(('127.0.0.1', 12000))
+    run_server(('192.168.122.56', 12000))
