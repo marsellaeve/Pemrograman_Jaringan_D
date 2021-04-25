@@ -5,10 +5,7 @@ UDP_PORT = 5050
 
 serverSock = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
 serverSock.bind(((UDP_IP_ADDRESS,UDP_PORT)))
-file=1
-filename='image'+str(file)
-print(filename)
-file=file+1
+filename='server2.jpg'
 fp = open(filename,'wb+')
 ditulis=0
 counter=0
