@@ -1,6 +1,6 @@
 ## Testing by Evelyn 05111840000099
 
-### Ubah IP address menjadi IP server di code client maupun server. Kemudian jalankan keduanya.
+### Testing: udp file -> Ubah IP address menjadi IP server di code client maupun server. Kemudian jalankan keduanya.
 
 ### Berikut hasil dari client
 
