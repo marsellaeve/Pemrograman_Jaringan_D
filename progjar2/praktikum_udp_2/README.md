@@ -1,3 +1,5 @@
+#### Made by Evelyn Tjitrodjojo 05111840000099
+
 Soal Tugas Praktikum UDP-2
 -	Loadlah file tersebut di simulator. Dalam praktikum ini lakukan broadcast dari sebuah client udp di alpine-1 agar dapat membroadcast pengiriman ke alpine-2 dan alpine-3 sekaligus, tambahkan  host alpine-4 dan alpine-5 yang dapat dikirimi broadcast juga.
 -	Gunakan file progjar2/udpclient_broadcast.py dan progjar2/udpserver_broadcast.py. Sesuaikan parameter dan variabel program agar sesuai dengan lingkungan jaringan,
