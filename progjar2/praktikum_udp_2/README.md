@@ -14,14 +14,17 @@ Jawaban:
 ![alt text](https://github.com/marsellaeve/Pemrograman_Jaringan_D/blob/master/progjar2/praktikum_udp_2/gambar_praktikum_udp_2/alpine.png)
 
 2. Karena Alpine-4 dan Alpine-5 belum terhubung internet, maka masukkan code berikut.
+
 Alpine-4
-•	ifconfig eth0 192.168.122.97 netmask 255.255.255.0 up
-•	route add default gw 192.168.122.1
-•	echo "nameserver 192.168.122.1" > /etc/resolv.conf
+- ifconfig eth0 192.168.122.97 netmask 255.255.255.0 up
+- route add default gw 192.168.122.1
+- echo "nameserver 192.168.122.1" > /etc/resolv.conf
+
 Alpine-5
-•	ifconfig eth0 192.168.122.113 netmask 255.255.255.0 up
-•	route add default gw 192.168.122.1
-•	echo "nameserver 192.168.122.1" > /etc/resolv.conf
+- ifconfig eth0 192.168.122.113 netmask 255.255.255.0 up
+- route add default gw 192.168.122.1
+- echo "nameserver 192.168.122.1" > /etc/resolv.conf
+
 Nameserver 192.168.122.1 didapatkan dari alpine lainnya.
 
 ![alt text](https://github.com/marsellaeve/Pemrograman_Jaringan_D/blob/master/progjar2/praktikum_udp_2/gambar_praktikum_udp_2/nameserver.png)
@@ -45,7 +48,7 @@ Berikut Hasil Client.
 
 ![alt text](https://github.com/marsellaeve/Pemrograman_Jaringan_D/blob/master/progjar2/praktikum_udp_2/gambar_praktikum_udp_2/hasil_client.PNG)
 
-### Kesimpulannya bila dijalankan dengan urutan, server dan kemudian client, maka isi broadcast yang disampaikan ke semua server (alpine 2-5) berurutan mulai dari awal hingga akhir (Broadcast ini angka 1-selesa). Isi Broadcast tersampaikan dengan lengkap.
+#### Kesimpulannya bila dijalankan dengan urutan, server dan kemudian client, maka isi broadcast yang disampaikan ke semua server (alpine 2-5) berurutan mulai dari awal hingga akhir (Broadcast ini angka 1-selesai). Isi Broadcast tersampaikan dengan lengkap.
 
 Selanjutnya, jalankan client (Alpine 1) terlebih dahulu, kemudian jalankan semua server (Alpine 2-5). Berikut hasilnya.
 
@@ -58,4 +61,4 @@ Berikut hasil semua server (Alpine 2-5).
 ![alt text](https://github.com/marsellaeve/Pemrograman_Jaringan_D/blob/master/progjar2/praktikum_udp_2/gambar_praktikum_udp_2/2_server_alphine4.PNG)
 ![alt text](https://github.com/marsellaeve/Pemrograman_Jaringan_D/blob/master/progjar2/praktikum_udp_2/gambar_praktikum_udp_2/2_server_alphine5.PNG)
 
-### Kesimpulannya, bila dijalankan dengan urutan client, baru kemudian server, maka isi broadcast yang tersampaikan pada server sesuai dengan pesan yang dikirimkan setelah server berjalan (tidak dari awal). Contoh: Client mulai angka 1-40, server baru dijalankan setelah client mengirimkan pesan angka 10, maka pesan yang didapatkan server mulai dari angka 11. Begitu juga seterusnya dengan server lainnya, sesuai dengan waktu berjalannya server.
+#### Kesimpulannya, bila dijalankan dengan urutan client, baru kemudian server, maka isi broadcast yang tersampaikan pada server sesuai dengan pesan yang dikirimkan setelah server berjalan (tidak dari awal). Contoh: Client mulai angka 1-40, server baru dijalankan setelah client mengirimkan pesan angka 10, maka pesan yang didapatkan server mulai dari angka 11. Begitu juga seterusnya dengan server lainnya, sesuai dengan waktu berjalannya server.
