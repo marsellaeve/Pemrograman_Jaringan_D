@@ -3,7 +3,7 @@ import socket
 
 SERVER_IP = '192.168.122.56'
 SERVER_PORT = 5005
-NAMAFILE='coba.png'
+NAMAFILE='bart.png'
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sock.bind((SERVER_IP, SERVER_PORT))
