@@ -17,64 +17,81 @@ Cek IP Alpine-1 (Server 1) -> ifconfig
 ![alt text](https://github.com/marsellaeve/Pemrograman_Jaringan_D/blob/master/progjar3/Tugas3/tugas3_screenshot/alpine1_ipserver1.PNG)
 
 Cek IP Alpine-2 (Client) -> ifconfig
+
 ![alt text](https://github.com/marsellaeve/Pemrograman_Jaringan_D/blob/master/progjar3/Tugas3/tugas3_screenshot/alpine2_ipclient.PNG)
 
 Cek IP Alpine-3 (Server 2) -> ifconfig
-![alt text](https://github.com/marsellaeve/Pemrograman_Jaringan_D/blob/master/progjar3/Tugas3/tugas3_screenshot/alpine1_ipserver2.PNG)
+
+![alt text](https://github.com/marsellaeve/Pemrograman_Jaringan_D/blob/master/progjar3/Tugas3/tugas3_screenshot/alpine3_ipserver2.PNG)
 
 #### HASIL OUTPUT MULTI PROCESS
 
 Client:
+
 ![alt text](https://github.com/marsellaeve/Pemrograman_Jaringan_D/blob/master/progjar3/Tugas3/tugas3_screenshot/multiprocess_client.PNG)
 
 Server 1:
+
 ![alt text](https://github.com/marsellaeve/Pemrograman_Jaringan_D/blob/master/progjar3/Tugas3/tugas3_screenshot/server1_multiprocess.PNG)
 
 Server 2:
+
 ![alt text](https://github.com/marsellaeve/Pemrograman_Jaringan_D/blob/master/progjar3/Tugas3/tugas3_screenshot/server2_multiprocess.PNG)
 
 #### HASIL OUTPUT MULTI PROCESS ASYNC
 
 Client:
+
 ![alt text](https://github.com/marsellaeve/Pemrograman_Jaringan_D/blob/master/progjar3/Tugas3/tugas3_screenshot/multiprocessasync_client.PNG)
 
 Server 1:
+
 ![alt text](https://github.com/marsellaeve/Pemrograman_Jaringan_D/blob/master/progjar3/Tugas3/tugas3_screenshot/server1_multiprocessasync.PNG)
 
 Server 2:
+
 ![alt text](https://github.com/marsellaeve/Pemrograman_Jaringan_D/blob/master/progjar3/Tugas3/tugas3_screenshot/server2_multiprocessasync.PNG)
 
 #### HASIL OUTPUT MULTI THREAD
 
 Client:
+
 ![alt text](https://github.com/marsellaeve/Pemrograman_Jaringan_D/blob/master/progjar3/Tugas3/tugas3_screenshot/multithread_client.PNG)
 
 Server 1:
+
 ![alt text](https://github.com/marsellaeve/Pemrograman_Jaringan_D/blob/master/progjar3/Tugas3/tugas3_screenshot/server1_multithread.PNG)
 
 Server 2:
+
 ![alt text](https://github.com/marsellaeve/Pemrograman_Jaringan_D/blob/master/progjar3/Tugas3/tugas3_screenshot/server2_multithread.PNG)
 
 #### HASIL OUTPUT MULTI THREAD ASYNC
 
 Client:
+
 ![alt text](https://github.com/marsellaeve/Pemrograman_Jaringan_D/blob/master/progjar3/Tugas3/tugas3_screenshot/multithreadasync_client.PNG)
 
 Server 1:
+
 ![alt text](https://github.com/marsellaeve/Pemrograman_Jaringan_D/blob/master/progjar3/Tugas3/tugas3_screenshot/server1_multithreadasync.PNG)
 
 Server 2:
+
 ![alt text](https://github.com/marsellaeve/Pemrograman_Jaringan_D/blob/master/progjar3/Tugas3/tugas3_screenshot/server2_multithreadasync.PNG)
 
 #### HASIL OUTPUT SINGLE THREAD
 
 Client:
+
 ![alt text](https://github.com/marsellaeve/Pemrograman_Jaringan_D/blob/master/progjar3/Tugas3/tugas3_screenshot/singlethread_client.PNG)
 
 Server 1:
+
 ![alt text](https://github.com/marsellaeve/Pemrograman_Jaringan_D/blob/master/progjar3/Tugas3/tugas3_screenshot/server1_singlethread.PNG)
 
 Server 2:
+
 ![alt text](https://github.com/marsellaeve/Pemrograman_Jaringan_D/blob/master/progjar3/Tugas3/tugas3_screenshot/server2_singlethread.PNG)
 
 #### HASIL
