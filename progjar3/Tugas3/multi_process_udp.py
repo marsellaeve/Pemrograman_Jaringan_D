@@ -6,15 +6,22 @@ from multiprocessing import Process
 def kirim_semua():
     texec = dict()
     urls = get_url_list()
+    temp = 0
     catat_awal = datetime.datetime.now()
     for k in urls:
-        download_gambar({urls[k]},{urls[k]})
+        download_gambar(urls[k],k)
         print(f"mendownload {urls[k]}")
         waktu = time.time()
         #bagian ini merupakan bagian yang mengistruksikan eksekusi fungsi download gambar secara multiprocess
-        UDP_IP_ADDRESS = "192.168.122.25"
-
-        texec[k] = Process(target=kirim_gambar, args=(UDP_IP_ADDRESS,5050,urls[k]))
+        UDP_IP_ADDRESS = "192.168.122.168"
+        UDP_IP_ADDRESS2 = "192.168.122.194"
+        if temp == 0:
+            texec[k] = Process(target=kirim_gambar, args=(UDP_IP_ADDRESS,5050,f"{k}.jpg"))
+            print('masuk server 1')
+            temp = temp+1
+        elif temp == 1:
+            print('masuk server 2')
+            texec[k] = Process(target=kirim_gambar, args=(UDP_IP_ADDRESS2,5050,f"{k}.jpg"))
         texec[k].start()
     #setelah menyelesaikan tugasnya, dikembalikan ke main process dengan join
     for k in urls:

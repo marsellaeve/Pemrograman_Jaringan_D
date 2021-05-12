@@ -1,21 +1,29 @@
-from library import download_gambar, get_url_list
+from library import download_gambar, get_url_list, kirim_gambar
 import time
 import datetime
 from multiprocessing import Process, Pool
 
-
-
-
-def download_semua():
+def kirim_semua():
     texec = dict()
     urls = get_url_list()
+    temp = 0
     status_task = dict()
     task_pool = Pool(processes=20) #2 task yang dapat dikerjakan secara simultan, dapat diset sesuai jumlah core
     catat_awal = datetime.datetime.now()
     for k in urls:
+        download_gambar(urls[k],k)
         print(f"mendownload {urls[k]}")
+        UDP_IP_ADDRESS = "192.168.122.168"
+        UDP_IP_ADDRESS2 = "192.168.122.194"
+        if temp == 0:
+            texec[k] = task_pool.apply_async(func=kirim_gambar, args=(UDP_IP_ADDRESS, 5050, f"{k}.jpg"))
+            print('masuk server 1')
+            temp = temp + 1
+        elif temp == 1:
+            print('masuk server 2')
+            texec[k] = task_pool.apply_async(func=kirim_gambar, args=(UDP_IP_ADDRESS2, 5050, f"{k}.jpg"))
         #bagian ini merupakan bagian yang mengistruksikan eksekusi fungsi download gambar secara multiprocess
-        texec[k] = task_pool.apply_async(func=download_gambar, args=(urls[k],))
+        # texec[k] = task_pool.apply_async(func=download_gambar, args=(urls[k],))
 
     #setelah menyelesaikan tugasnya, dikembalikan ke main process dengan mengambil hasilnya dengan get
     for k in urls:
@@ -31,4 +39,4 @@ def download_semua():
 #fungsi download_gambar akan dijalankan secara multi process
 
 if __name__=='__main__':
-    download_semua()
+    kirim_semua()
