@@ -22,7 +22,7 @@ Cek IP Alpine-2 (Client) -> ifconfig
 
 Cek IP Alpine-3 (Server 2) -> ifconfig
 
-![alt text](https://github.com/marsellaeve/Pemrograman_Jaringan_D/blob/master/progjar3/Tugas3/tugas3_screenshot/alpine3_ipserver2.PNG)
+![alt text](https://github.com/marsellaeve/Pemrograman_Jaringan_D/blob/master/progjar3/Tugas3/tugas3_screenshot/alpine2_ipserver2.PNG)
 
 #### HASIL OUTPUT MULTI PROCESS
 
