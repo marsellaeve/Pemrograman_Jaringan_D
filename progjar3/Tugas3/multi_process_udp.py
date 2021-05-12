@@ -8,6 +8,7 @@ def kirim_semua():
     urls = get_url_list()
     catat_awal = datetime.datetime.now()
     for k in urls:
+        download_gambar({urls[k]},{urls[k]})
         print(f"mendownload {urls[k]}")
         waktu = time.time()
         #bagian ini merupakan bagian yang mengistruksikan eksekusi fungsi download gambar secara multiprocess
