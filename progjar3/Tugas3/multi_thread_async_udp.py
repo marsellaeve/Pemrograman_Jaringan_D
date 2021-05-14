@@ -17,12 +17,12 @@ def kirim_semua():
         UDP_IP_ADDRESS = "192.168.122.168"
         UDP_IP_ADDRESS2 = "192.168.122.194"
         if temp == 0:
-            texec[k] = task.submit(target=kirim_gambar, args=(UDP_IP_ADDRESS, 5050, f"{k}.jpg"))
+            texec[k] = task.submit(kirim_gambar, args=(UDP_IP_ADDRESS, 5050, f"{k}.jpg"))
             print('masuk server 1')
             temp = temp + 1
         elif temp == 1:
             print('masuk server 2')
-            texec[k] = task.submit(target=kirim_gambar, args=(UDP_IP_ADDRESS2, 5050, f"{k}.jpg"))
+            texec[k] = task.submit(kirim_gambar, args=(UDP_IP_ADDRESS2, 5050, f"{k}.jpg"))
         #bagian ini merupakan bagian yang mengistruksikan eksekusi fungsi download gambar secara multithread
         # texec[k] = task.submit(download_gambar, urls[k])
 
