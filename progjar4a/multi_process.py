@@ -8,7 +8,7 @@ def download_100():
     temp = 0
     catat_awal = datetime.datetime.now()
     for k in range(100):
-        print(f"mendownload ")
+        print(f"download get {k}")
         waktu = time.time()
         # bagian ini merupakan bagian yang mengistruksikan eksekusi fungsi download gambar secara multiprocess
         texec[k] = Process(target=remote_get, args=('pokijan.jpg'))
