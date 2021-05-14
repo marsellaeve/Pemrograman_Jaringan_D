@@ -13,8 +13,8 @@ def kirim_semua():
     for k in urls:
         download_gambar(urls[k],k)
         print(f"mendownload {urls[k]}")
-        UDP_IP_ADDRESS = "192.168.122.168"
-        UDP_IP_ADDRESS2 = "192.168.122.194"
+        UDP_IP_ADDRESS = "192.168.122.235"
+        UDP_IP_ADDRESS2 = "192.168.122.107"
         if temp == 0:
             texec[k] = task_pool.apply_async(func=kirim_gambar, args=(UDP_IP_ADDRESS, 5050, f"{k}.jpg"))
             print('masuk server 1')
